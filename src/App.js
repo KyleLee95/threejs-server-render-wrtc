@@ -1,14 +1,10 @@
-import React, { useContext } from 'react';
-import { AuthContext } from '../context/AuthContext';
-import { RoutesManager } from './RoutesManager';
+import React from 'react'
+import { RoutesManager } from './RoutesManager'
 
-export const App = (props) => {
-  const value = useContext(AuthContext);
+export const App = () => {
   return (
     <div>
-      <AuthContext.Provider value="test">
-        <RoutesManager />
-      </AuthContext.Provider>
+      <RoutesManager />
     </div>
-  );
-};
+  )
+}
