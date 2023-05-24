@@ -2,10 +2,7 @@
 
 1. Clone Repo
 2. cd && npm i
-3. From the root directory (from two different terminal instances):
-
-- 3.1 npm run dev (start vite client)
-- 3.2 node src/server/index.js (start server)
+3. From the root directory run npm run start dev
 
 ## Motivation
 
