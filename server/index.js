@@ -1,13 +1,12 @@
 import express from "express";
 const app = express();
-const port = process.env.PORT || 8080;
+const port = 8080;
 import path from "path";
 import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 import geckos from "@geckos.io/server";
 import * as wrtc from "wrtc";
-console.log(wrtc);
 const {
   RTCIceCandidate,
   RTCPeerConnection,
@@ -86,7 +85,6 @@ io.onConnection((channel) => {
         preserveDrawingBuffer: true,
       }),
     });
-    console.log("renderer", renderer);
     return renderer;
   }
 

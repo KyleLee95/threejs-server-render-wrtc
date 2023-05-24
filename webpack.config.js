@@ -3,7 +3,6 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import Dotenv from "dotenv-webpack";
 //isDev is set in the package.json start script.
 //This determines what features of webpack will run
 const isDev = process.env.NODE_ENV === "development";
@@ -29,10 +28,7 @@ const config = {
       },
     ],
   },
-  plugins: [
-    new MiniCssExtractPlugin({ filename: "./public/main.css" }),
-    new Dotenv(),
-  ],
+  plugins: [new MiniCssExtractPlugin({ filename: "./public/main.css" })],
 };
 
 export default config;
