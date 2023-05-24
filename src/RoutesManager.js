@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
-import { Route, Routes } from 'react-router-dom';
-import { Home } from './Home';
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./Home.js";
 
 export const RoutesManager = (props) => {
   return (
