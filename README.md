@@ -1,8 +1,8 @@
 ## Quickstart
 
 1. Clone Repo
-2. cd && npm i
-3. From the root directory run npm run start dev
+2. ```cd && npm i```
+3. From the root directory: ```npm run start dev```
 
 ## Motivation
 
